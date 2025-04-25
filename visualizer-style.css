@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, serif;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header Section */
+
+header{
+    width: 100%;
+    height: 90px;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(164, 43, 2);
+    display: flex;
+    padding: 0px 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, serif;
+    font-size: large;
+}
+.logo-img{
+    height: 50px;
+    width: 50px;
+}
+.logo-img img{
+    height: 100%;
+    width: 100%;
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+.nav-links a{
+    color: white;
+    font-size:larger;
+}
+
+/* Main */
+
+/* scrolling */
+
+.scroll-container{
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(213, 56, 4);
+    overflow: hidden;
+}
+.scroll-content{
+    display: flex;
+    gap: 10px;
+    width: calc(100% * 3);
+}
+.scroll-content img{
+    border: 2px solid rgb(240, 238, 238);
+    border-radius: 15px;
+    width: 1520px;
+    height: 230px;
+    animation: scroll-animation 15s infinite;
+}
+
+@keyframes scroll-animation{
+    0%{ transform: translateX(0); }
+    20%{  transform: translateX(0);  }
+
+    30%{  transform: translateX(-100%);  }
+    50%{  transform: translateX(-100%);  }
+
+    60%{  transform: translateX(-200%);  }
+    80%{  transform: translateX(-200%);  }
+
+    100%{  transform: translateX(0);  }
+}
+
+/* Visualizer */
+
+main{
+    min-height: 100vh;
+    background: rgb(150, 13, 13);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(167, 1, 1) 45%, rgba(255, 128, 0, 0.955) 100%);
+}
+
+
+/* practice */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#gameArea{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.num-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn button {
+    padding: 10px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: black;
+    color: red;
+    height: 70px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 300px;
+    margin-top: 300px;
+}
+
+.treasures img {
+    width: 100px;
+    margin: 25px;
+    cursor: grab;
+}
+.sso{
+    display: flex;
+
+}
+
+
+#boxContainer {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    max-width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+#sortedboxes {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    max-width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+#resultBox{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    color: rgb(255, 242, 0);
+}
+
+.box {
+    background-image: url('treasure-chest-3.png');
+    background-size: cover;
+    width: 140px;
+    height: 100px;
+    border: 2px solid #000;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+    background-color: rgb(10, 10, 10);
+    transition: background-color 0.5s ease;
+    position: relative;
+}
+.bo{
+    background-size: cover;
+    background-image: url('treasure-chest-3.png');
+
+    width: 140px;
+    height: 100px;
+    border: 2px solid #000;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+    background-color: rgb(21, 20, 20);
+    transition: background-color 0.5s ease;
+    position: relative;
+
+}
+
+.box.highlight {
+    background-color: yellow !important;
+}
+.bo.highlight{
+    background-color: yellow !important;
+}
+
+.draggable-item {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.root{
+    min-height: 500px;
+    margin:auto;
+    margin-bottom: 20px;
+    padding: 50px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-image: url(indianajohnes3-removebg-preview.png);
+    background-size: cover;
+}
+#numBoxes{
+    margin: 10px;
+    text-align: center;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    border: 2px solid purple;
+    font-size: 30px;
+    font-style: italic;
+
+}
+#createBoxesButton{
+    margin: 10px;
+    height: 35px;
+    width: 160px;
+    font-size: 25px;
+    font-style: italic;
+    border-radius: 5px;
+    border: 2px solid purple;
+}
+#algorithmSelect, .sso h3{
+    height: 40px;
+    width: 350px;
+    font-size: 25px;
+
+}
+#startSearchButton{
+    height: 40px;
+    width: 180px;
+    border-radius: 5px;
+    border: 2px solid purple;
+    font-size: 28px;
+    font-style: italic;
+
+}
+
+
+/* Footer Section */
+
+footer{
+    height: 70px;
+    width: 100%;
+}
+.foot{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: rgb(186, 26, 26);
+    text-align: center;
+    padding: 5px;
+}

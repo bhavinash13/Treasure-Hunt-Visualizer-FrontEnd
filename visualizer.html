@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt Visualizer Visualisation Section</title>
+    <link rel="stylesheet" href="visualizer-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="THV-logo-symbol.png" alt="logo">
+                </div>
+                <div class="logo-title">
+                    <h1>THV</h1>
+                    <p>Treasure Hunt Visualizer</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="visualizer.html">Visualizer</a>
+                <a href="reference.html">Reference</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="scroll-container">
+            <div class="scroll-content">
+                <img src="2.png" alt="imag1">
+                <img src="3.png" alt="imag1">
+                <img src="4.png" alt="imag1">
+            </div>
+            
+        </div>
+
+
+        <div class="play-btn">
+            <button id="playButton">Play Now</button>
+        </div>
+    
+        <div id="gameArea" style="display:none;">
+            <h1 style="color: gold; background-color: rgb(191, 6, 6);;">Treasure Hunt Visualizer</h1>
+            
+            <!-- User Input: Number of Boxes -->
+           <div class="num-user">
+              <h2 style="display: inline-block;"> <label for="numBoxes">Enter Number of Boxes (Max: 10):</label></h2>
+              <input type="number" id="numBoxes" min="1" max="10">
+           </div>
+            <h3><button id="createBoxesButton">Create Boxes</button></h3>
+            
+            <!-- Draggable Items -->
+            <div class="treasures">
+                <img id="gold" src="gold-coins.png" draggable="true" alt="Gold">
+                <img id="platinum" src="Silver-Coin.png" draggable="true" alt="Platinum">
+                <img id="rock" src="Stone-img1.png" draggable="true" alt="Rock">
+            </div>
+    
+            <!-- Wooden Boxes -->
+          <div class="root">
+            <div id="boxContainer"></div>
+            <div id="sortedboxes"></div>
+
+        
+    
+            <!-- Sorting and Searching Options -->
+            <div class="sso">
+                <h3>Select Any Algorithm: </h3>
+                <select id="algorithmSelect">
+                    <option value="linear">Linear Search</option>
+                    <option value="binary"> Sorting and  Binary Search</option>
+                </select>
+            </div>
+            <button id="startSearchButton">Start Search</button>
+            <p id="resultBox">Result: </p>
+               
+          </div>
+    
+            <div id="result"></div>
+               
+            
+            
+            
+            
+        </div>
+
+        <div class="scroll-container">
+            <div class="scroll-content">
+                <img src="5.png" alt="imag1">
+                <img src="11.png" alt="imag1">
+                <img src="12.png" alt="imag1">
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <h3>CopyRights &copy; Treasure Hunt Visualizer Pvt Ltd 2025 All Rights Reserved</h3>
+        </div>
+    </footer>
+
+
+    <!-- <script>
+        document.getElementById("play").addEventListener("click", function(){
+            const playButtons = document.getElementsByClassName("play-btn");
+            for (let i = 0; i < playButtons.length; i++) {
+                playButtons[i].style.display = "none";
+            }
+
+            document.getElementById("main-logic").style.display="block";
+        });
+
+
+    </script> -->
+    <script src="practice-logic.js"></script>
+</body>
+</html>
