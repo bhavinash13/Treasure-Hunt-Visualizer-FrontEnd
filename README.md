@@ -18,9 +18,9 @@ Through animations and step-by-step explanations, users gain insight into how th
 
 ## Reference Section – Step-by-Step Guide & Algorithms Used
 ### How to Use the Visualizer
-Click "Play" – Start the interactive treasure hunt process.
-Select Number of Boxes – Define the number of wooden containers.
-Fill Boxes – Assign treasures inside each box.
+Click "Play" – Start the interactive treasure hunt process. 
+Select Number of Boxes – Define the number of wooden containers. 
+Fill Boxes – Assign treasures inside each box. 
 Sorting Stage – Watch how Merge Sort arranges the boxes based on weight.
 Search Stage – Choose between: Linear Search: Step-by-step sequential checking. Binary Search: Optimized search for faster results.
 Gold Discovery – The algorithm highlights the treasure box with the gold.
@@ -39,7 +39,7 @@ Treasure Hunt Visualizer is a gamified algorithm learning tool aimed at making s
 Frontend: HTML, CSS, JavaScript for interactive UI.
 Visualization: CSS animations and JavaScript logic.
 Algorithms: Implemented using JavaScript for real-time demonstrations.
-Who Can Use It?
+### Who Can Use It?
 Students & Learners: Those wanting a hands-on approach to algorithms.
 Gamers & Puzzle Enthusiasts: Individuals who enjoy logic-based challenges.
 Educators & Instructors: Teachers looking for a fun visualization tool for algorithm-based learning.
